@@ -12,17 +12,17 @@ function Header() {
             <ul className='flex space-x-20 text-xl'>
                 
                 <li 
-                className='transition-transform duration-300 transform hover:shadow-lg hover:-translate-y-1 hover:text-[#595c9f] p-6 cursor-pointer'>
+                className='transition-transform duration-300 transform hover:shadow-lg hover:-translate-y-1 hover:text-white hover:bg-[#595c9f] p-6 cursor-pointer rounded-lg'>
                     <a href='#about'>About</a>
                 </li>
                 
                 <li 
-                className='transition-transform duration-300 transform hover:shadow-lg hover:-translate-y-1 hover:text-[#595c9f] p-6 cursor-pointer'>
+                className='transition-transform duration-300 transform hover:shadow-lg hover:-translate-y-1  hover:text-white hover:bg-[#595c9f] p-6 cursor-pointer rounded-lg'>
                     <a href='#projects'>Projects</a>
                 </li>
                 
                 <li 
-                className='transition-transform duration-300 transform hover:shadow-lg hover:-translate-y-1 hover:text-[#595c9f] p-6 cursor-pointer'>
+                className='transition-transform duration-300 transform hover:shadow-lg hover:-translate-y-1  hover:text-white hover:bg-[#595c9f] p-6 cursor-pointer rounded-lg'>
                     <a href='#contact'>Contact</a>
                 </li>
 
