@@ -4,9 +4,8 @@ import RutgersBootcamp from "../assets/photos/RutgersBootcamp.png"
 
 function Education() {
   return (
-    <section className='h-[1000px] bg-gray-100 flex justify-center items-start'>
-
-      {/* Education Section */}
+    <section className='bg-gray-100 flex justify-between items-center'>
+      
       <div className='w-1/2 p-8 border-gray-300'>
         <div>
             <h1 className='text-2xl font-semibold mb-4'>Education:</h1>
@@ -37,9 +36,9 @@ function Education() {
         </div>
       </div>
 
-    
     </section>
   )
 }
 
-export default Education
+export default Education;
+

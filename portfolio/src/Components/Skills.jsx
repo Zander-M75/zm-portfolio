@@ -11,6 +11,19 @@ import tailwind from "../assets/photos/techStack/tailwind.png";
 import redux from "../assets/photos/techStack/redux.png";
 import bootstrap from "../assets/photos/techStack/bootstrap.png";
 
+import firebase from "../assets/photos/techStack/firebase.png";
+import node from "../assets/photos/techStack/node.png";
+import express from "../assets/photos/techStack/express.png";
+import handlebars from "../assets/photos/techStack/handlebars.png";
+import jest from "../assets/photos/techStack/jest.png";
+import sequelize from "../assets/photos/techStack/sequelize.png";
+
+import sql from "../assets/photos/techStack/sql.png";
+import mongo from "../assets/photos/techStack/mongo.png";
+
+import git from "../assets/photos/techStack/git.png";
+import github from "../assets/photos/techStack/github.png";
+
 const Skills = () => {
   const [activeTab, setActiveTab] = useState('frontend');
 
@@ -20,14 +33,35 @@ const Skills = () => {
      { name: 'React.js', logo: react },    
      { name: 'CSS3', logo: css },
      { name: 'JQuery', logo: jquery },
-     { name: 'Tailwind CSS', logo: tailwind },   
+     { name: 'Tailwind CSS', logo: tailwind },
+     { name: 'Materialize', logo: materialize },
+     { name: 'Bootstrap', logo: bootstrap }, 
+     { name: 'Redux', logo: redux },  
   ];
 
-  const backendTech = [];
+  const backendTech = [
+    { name: 'Firebase', logo: firebase },
+    { name: 'JavaScript ES6+', logo: javascript },
+    { name: 'Node.js', logo: node },
+    { name: 'Express.js', logo: express },
+    { name: 'Jest.js', logo: jest },
+    { name: 'Handlebars.js', logo: handlebars },
+    { name: 'Sequelize.js', logo: sequelize },
 
-  const databaseTech = [];
 
-  const devOpsTech = [];
+];
+
+  const databaseTech = [
+    { name: 'SQL', logo: sql },
+    { name: 'MongoDB', logo: mongo },
+];
+
+  const devOpsTech = [
+    { name: 'Git', logo: git },
+    { name: 'GitHub', logo: github },
+
+
+];
 
   const getTechToDisplay = () => {
     switch (activeTab) {
@@ -45,30 +79,30 @@ const Skills = () => {
   };
 
   return (
-    <section className="bg-gray-100 p-10 h-[1000px] flex justify-center items-center">
-      <div className="border-2 border-gray-300 p-8 rounded-lg shadow-md w-[80%]">
+    <section className="bg-gray-100 flex justify-between items-center w-1/2 p-8 border-gray-300">
+      <div>
         <h1 className="text-4xl font-semibold mb-4">Tech Stack</h1>
         <div className="flex mb-4">
           <button
-            className={`p-4 ${activeTab === 'frontend' ? 'bg-blue-500 text-white' : ''}`}
+            className={`p-4 rounded-lg ${activeTab === 'frontend' ? 'bg-[#595c9f] text-white' : ''}`}
             onClick={() => setActiveTab('frontend')}
           >
             Frontend
           </button>
           <button
-            className={`p-4 ${activeTab === 'backend' ? 'bg-blue-500 text-white' : ''}`}
+            className={`p-4 rounded-lg ${activeTab === 'backend' ? 'bg-[#595c9f] text-white' : ''}`}
             onClick={() => setActiveTab('backend')}
           >
             Backend
           </button>
           <button
-            className={`p-4 ${activeTab === 'database' ? 'bg-blue-500 text-white' : ''}`}
+            className={`p-4 rounded-lg ${activeTab === 'database' ? 'bg-[#595c9f] text-white' : ''}`}
             onClick={() => setActiveTab('database')}
           >
             Database
           </button>
           <button
-            className={`p-4 ${activeTab === 'devOps' ? 'bg-blue-500 text-white' : ''}`}
+            className={`p-4 rounded-lg ${activeTab === 'devOps' ? 'bg-[#595c9f] text-white' : ''}`}
             onClick={() => setActiveTab('devOps')}
           >
             DevOps/Other
@@ -85,6 +119,7 @@ const Skills = () => {
       </div>
     </section>
   );
+  
 };
 
 export default Skills;
