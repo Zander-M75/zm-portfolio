@@ -3,7 +3,7 @@ import logo from "../assets/photos/logo.png"
 
 function Header() {
   return (
-    <header className='sticky z-50 top-0 w-full flex justify-between items-center py-4 pl-8 pr-48 bg-white shadow-md font-poppins'>
+    <header className='sticky z-50 top-0 w-full flex justify-between items-center h-28 pl-8 pr-48 bg-white shadow-md font-poppins'>
         <div>
             <img src={logo} alt='header logo' />
         </div>

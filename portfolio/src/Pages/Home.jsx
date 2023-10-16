@@ -10,8 +10,7 @@ function Home() {
     <>
     <Header />
     <About />
-    <Education />
-    <Skills />
+    <EducationAndSkills />
     </>
   )
 }

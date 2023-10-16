@@ -4,7 +4,7 @@ import Skills from './Skills'
 
 function EducationAndSkills() {
   return (
-    <div className='flex flex-row justify-between items-start w-full px-4'>
+    <div className='flex flex-row justify-between items-start w-full'>
       <div className='flex-1 p-4'>
         <Education />
       </div>

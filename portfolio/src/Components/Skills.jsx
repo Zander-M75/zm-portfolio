@@ -79,9 +79,9 @@ const Skills = () => {
   };
 
   return (
-    <section className="bg-gray-100 flex justify-between items-center w-1/2 p-8 border-gray-300">
+    <section className="flex justify-between items-center w-1/2 p-8 border-gray-300">
       <div>
-        <h1 className="text-4xl font-semibold mb-4">Tech Stack</h1>
+        <h1 className="text-2xl font-semibold mb-4">Tech Stack:</h1>
         <div className="flex mb-4">
           <button
             className={`p-4 rounded-lg ${activeTab === 'frontend' ? 'bg-[#595c9f] text-white' : ''}`}
