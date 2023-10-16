@@ -79,30 +79,30 @@ const Skills = () => {
   };
 //   flex flex-col justify-between items-start w-full p-8 border border-gray-300 rounded-lg
   return (
-    <section className="w-full p-8 border-gray-300 rounded-lg">
+    <section className="p-8 bg-gray-100 rounded-lg h-[504px] w-[624px]">
       <div>
-        <h1 className="text-3xl font-bold mb-4 text-blue-600">Tech Stack:</h1>
+        <h1 className="text-4xl font-bold mb-4">Tech Stack:</h1>
         <div className="flex mb-4 gap-2">
           <button
-            className={`flex-1 p-2 rounded-lg transition duration-300 ease-in-out ${activeTab === 'frontend' ? 'bg-blue-600 text-white' : 'bg-gray-200 hover:bg-gray-300'}`}
+            className={`flex-1 p-2 rounded-lg transition duration-300 ease-in-out ${activeTab === 'frontend' ? 'bg-[#595c9f] text-white' : 'bg-gray-200 hover:bg-gray-300'}`}
             onClick={() => setActiveTab('frontend')}
           >
             Frontend
           </button>
           <button
-            className={`flex-1 p-2 rounded-lg transition duration-300 ease-in-out ${activeTab === 'backend' ? 'bg-blue-600 text-white' : 'bg-gray-200 hover:bg-gray-300'}`}
+            className={`flex-1 p-2 rounded-lg transition duration-300 ease-in-out ${activeTab === 'backend' ? 'bg-[#595c9f] text-white' : 'bg-gray-200 hover:bg-gray-300'}`}
             onClick={() => setActiveTab('backend')}
           >
             Backend
           </button>
           <button
-            className={`flex-1 p-2 rounded-lg transition duration-300 ease-in-out ${activeTab === 'database' ? 'bg-blue-600 text-white' : 'bg-gray-200 hover:bg-gray-300'}`}
+            className={`flex-1 p-2 rounded-lg transition duration-300 ease-in-out ${activeTab === 'database' ? 'bg-[#595c9f] text-white' : 'bg-gray-200 hover:bg-gray-300'}`}
             onClick={() => setActiveTab('database')}
           >
             Database
           </button>
           <button
-            className={`flex-1 p-2 rounded-lg transition duration-300 ease-in-out ${activeTab === 'devOps' ? 'bg-blue-600 text-white' : 'bg-gray-200 hover:bg-gray-300'}`}
+            className={`flex-1 p-2 rounded-lg transition duration-300 ease-in-out ${activeTab === 'devOps' ? 'bg-[#595c9f] text-white' : 'bg-gray-200 hover:bg-gray-300'}`}
             onClick={() => setActiveTab('devOps')}
           >
             DevOps/Other

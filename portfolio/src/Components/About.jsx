@@ -3,7 +3,7 @@ import zanderCoding from "../assets/photos/zanderCoding.jpg";
 
 function About() {
   return (
-    <section id="about" className="bg-gray-100">
+    <section id="about" className="bg-gray-100 pt-5 pb-5">
       <div className="container mx-auto flex flex-col md:flex-row items-center">
 
         {/* Profile Picture with Hover Effect */}
