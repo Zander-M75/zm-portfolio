@@ -60,7 +60,7 @@ function FrontOfCard({ logo }) {
     return (
       <div className='flex justify-center'>
           <div className='mt-14 mb-72 p-8'>
-          <div className="mb-12 bg-gradient-to-r from-[#595c9f] to-purple-300 p-6 rounded-lg shadow-md">
+          <div className="mb-8 bg-gradient-to-r from-[#595c9f] to-purple-300 p-6 rounded-lg shadow-md">
     <h1 className="text-3xl font-extrabold text-white mb-3">My Projects</h1>
     <h3 className="text-xl font-medium text-white opacity-80">A showcase of projects I've developed and contributed to.</h3>
 </div>
