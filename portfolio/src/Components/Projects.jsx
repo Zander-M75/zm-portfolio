@@ -41,7 +41,7 @@ const projectData = [
 
 function FrontOfCard({ logo }) {
     return (
-      <div className="absolute inset-0 w-full h-full bg-gray-300 p-6 flex justify-center items-center transition-all duration-100 delay-200 z-20 hover:opacity-0">
+      <div className="absolute inset-0 w-full h-full shadow-md bg-gradient-to-r from-slate-300 to-slate-100 p-6 flex justify-center items-center transition-all duration-100 delay-200 z-20 hover:opacity-0">
         <img src={logo} alt="Project Logo" className='w-full h-full object-cover' />
       </div>
     );
@@ -60,10 +60,11 @@ function FrontOfCard({ logo }) {
     return (
       <div className='flex justify-center'>
           <div className='mt-14 mb-72 p-8'>
-              <div className='mb-8'>
-                  <h1 className='text-2xl font-bold mb-2'>My Projects</h1>
-                  <h3 className='text-lg'>A showcase of projects I've developed and contributed to.</h3>
-              </div>
+          <div className="mb-12 bg-gradient-to-r from-[#595c9f] to-purple-300 p-6 rounded-lg shadow-md">
+    <h1 className="text-3xl font-extrabold text-white mb-3">My Projects</h1>
+    <h3 className="text-xl font-medium text-white opacity-80">A showcase of projects I've developed and contributed to.</h3>
+</div>
+
               <div className='grid grid-cols-3 gap-4 mb-8'>
                 {projectData.map((project, index) => (
                   <a href={project.link} key={index} target="_blank" rel="noopener noreferrer" className='relative w-96 h-60 rounded-2xl text-white overflow-hidden cursor-pointer transition-all duration-700 card'>
