@@ -8,8 +8,7 @@ function HomePage() {
     return (
         <div className="flex flex-col justify-center items-center h-screen pt-20 bg-cover bg-no-repeat bg-center relative" style={{ backgroundImage: `url('${background}')` }}>
             
-            {/* Gradient overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-50"></div>
+
 
             {/* Card with Low Opacity */}
             <div className="flex flex-col items-center bg-white bg-opacity-70 p-8 rounded-lg shadow-2xl z-10">
