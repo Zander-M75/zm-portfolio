@@ -5,6 +5,8 @@ import Education from '../Components/Education'
 import Skills from '../Components/Skills'
 import EducationAndSkills from '../Components/EducationAndSkills'
 import Projects from '../Components/Projects'
+import HomePage from '../Components/HomePage'
+
 
 function Home() {
   return (
@@ -13,6 +15,7 @@ function Home() {
     <About />
     <EducationAndSkills />
     <Projects />
+    <HomePage />
     </>
   )
 }
