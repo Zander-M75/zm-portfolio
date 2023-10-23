@@ -28,7 +28,7 @@ function HomePage() {
                     </a>
                 </div>
 
-                <a href="/projects" className="bg-[#595c9f] text-white py-2 px-5 rounded-lg hover:bg-slate-300 hover:text-black transition-transform transform hover:scale-110">
+                <a href="/projects" className="bg-[#595c9f] text-white py-2 px-5 rounded-lg transition-transform transform hover:scale-110 hover:shadow-2xl">
                     See Projects
                 </a>
             </div>

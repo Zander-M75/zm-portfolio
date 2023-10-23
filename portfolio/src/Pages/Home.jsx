@@ -2,11 +2,10 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from '../Components/Header';
 import About from '../Components/About';
-import Education from '../Components/Education';
-import Skills from '../Components/Skills';
 import EducationAndSkills from '../Components/EducationAndSkills';
 import Projects from '../Components/Projects';
 import HomePage from '../Components/HomePage';
+import Contact from '../Components/Contact';
 
 function Home() {
   return (
@@ -21,6 +20,7 @@ function Home() {
                 </>
             } />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
         </Routes>
     </Router>
 );

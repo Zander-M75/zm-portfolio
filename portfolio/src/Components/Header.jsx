@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';  // Import the Link component
+import { Link } from 'react-router-dom';
 import logo from "../assets/photos/logo.png";
 
 function Header() {
@@ -25,11 +25,11 @@ function Header() {
                         <Link to="/projects">Projects</Link>
                     </li>
                     
-                    {/* Uncomment when the Contact component is created
+                    
                     <li className='transition-transform duration-300 transform hover:shadow-lg hover:-translate-y-1 hover:text-white hover:bg-[#595c9f] p-6 cursor-pointer rounded-lg'>
                         <Link to="/contact">Contact</Link>
                     </li>
-                    */}
+                   
                 </ul>
             </nav>
         </header>
