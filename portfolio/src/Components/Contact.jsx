@@ -13,76 +13,52 @@ function Contact() {
     };
 
     return (
-        <div className="min-h-screen flex flex-col items-center justify-center p-8">
-            <h2 className="text-2xl font-bold mb-4 text-center">
-                Let's solve problems together!
+        <div className="flex flex-col items-center justify-center p-8 ">
+            <h2 className="text-3xl font-bold mb-4 text-center text-[#595c9f]">
+                Got A Challenge? Lets Tackle It Together!
             </h2>
-            <p className="text-gray-600 mb-8 text-center">
-                Please reach out and I'll get back to you as soon as I can.
+            <p className="text-gray-700 mb-8 text-xl text-center">
+                Drop me a line, and I'll get back to you swiftly.
             </p>
 
             <form
                 action="https://formspree.io/f/meqbnkzy"
                 method="POST"
-                className="bg-slate-200 p-6 rounded shadow-lg w-[700px]"
+                className="bg-white p-6 rounded-xl shadow-md w-[700px] border border-gray-300 space-y-6"
             >
-                <div className="mb-4">
-                    <label className="block text-gray-700 text-sm font-bold mb-2">Name</label>
-                    <input
-                        type="text"
-                        name="name"
-                        placeholder="John Doe"
-                        value={formData.name}
-                        onChange={handleChange}
-                        required
-                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    />
-                </div>
-
-                <div className="mb-4">
-                    <label className="block text-gray-700 text-sm font-bold mb-2">Email</label>
-                    <input
-                        type="email"
-                        name="email"
-                        placeholder="example@email.com"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    />
-                </div>
-
-                <div className="mb-4">
-                    <label className="block text-gray-700 text-sm font-bold mb-2">Phone (optional)</label>
-                    <input
-                        type="tel"
-                        name="phone"
-                        placeholder="(555) 555-5555"
-                        value={formData.phone}
-                        onChange={handleChange}
-                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    />
-                </div>
-
-                <div className="mb-6">
-                    <label className="block text-gray-700 text-sm font-bold mb-2">Message</label>
-                    <textarea
-                        name="message"
-                        placeholder="Your message..."
-                        value={formData.message}
-                        onChange={handleChange}
-                        required
-                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        rows="5"
-                    ></textarea>
-                </div>
+                {['Name', 'Email', 'Phone (optional)', 'Message'].map((label, idx) => (
+                    <div key={idx} className="mb-4">
+                        <label className={`block text-gray-800 text-sm font-semibold mb-2 ${idx === 3 ? "block" : ""}`}>{label}</label>
+                        {idx !== 3 ? (
+                            <input
+                                type={label === 'Email' ? "email" : label === 'Phone (optional)' ? "tel" : "text"}
+                                name={label.toLowerCase().replace(/ \(optional\)| /g, '')}
+                                placeholder={label === 'Name' ? "John Doe" : label === 'Email' ? "example@email.com" : label === 'Phone (optional)' ? "(555) 555-5555" : ""}
+                                value={idx === 0 ? formData.name : idx === 1 ? formData.email : formData.phone}
+                                onChange={handleChange}
+                                required={idx !== 2}
+                                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            />
+                        ) : (
+                            <textarea
+                                name="message"
+                                placeholder="Share your thoughts..."
+                                value={formData.message}
+                                onChange={handleChange}
+                                required
+                                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                rows="4"
+                            ></textarea>
+                        )}
+                    </div>
+                ))}
 
                 <div className="flex justify-end">
                     <button
                         type="submit"
-                        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        className="bg-[#595c9f] hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105"
                     >
-                        Send Message
+                        Dispatch
                     </button>
                 </div>
             </form>
@@ -91,4 +67,5 @@ function Contact() {
 }
 
 export default Contact;
+
 
