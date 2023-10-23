@@ -6,12 +6,12 @@ import background from "../assets/photos/background.png";  // Import the backgro
 
 function HomePage() {
     return (
-        <div className="flex flex-col justify-center items-center h-screen pt-20 bg-cover bg-no-repeat bg-center relative" style={{ backgroundImage: `url('${background}')` }}>
+        <div className="flex flex-col justify-center items-center h-screen bg-cover bg-no-repeat bg-center relative" style={{ backgroundImage: `url('${background}')` }}>
             
 
 
             {/* Card with Low Opacity */}
-            <div className="flex flex-col items-center bg-white bg-opacity-70 p-8 rounded-lg shadow-2xl z-10">
+            <div className="flex flex-col items-center mb-20 bg-white bg-opacity-70 p-8 rounded-lg shadow-2xl z-10">
                 <div className="rounded-full w-52 h-52 overflow-hidden shadow-lg mb-5">
                     <img src={burger3} alt="Zander" className="w-full h-full object-cover" />
                 </div>
