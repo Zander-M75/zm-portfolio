@@ -11,4 +11,5 @@ export default defineConfig({
       plugins: [tailwindcss, autoprefixer],
     },
   },
+  base: "/zm-portfolio/", // Replace 'your-repository-name' with your actual GitHub repository name
 });
