@@ -66,29 +66,27 @@ function FrontOfCard({ logo }) {
   
   function Projects() {
     return (
-      <div className='flex justify-center mt-[-70px]'> {/* Adjusted margin-top */}
-          <div className='mt-14 p-8'>
-              <div className="mb-6 bg-gradient-to-r from-[#595c9f] to-[#3a3e7e] p-4  rounded-lg shadow-md">
-                <h1 className="text-3xl text-center font-extrabold text-white mb-3">My Projects</h1>
-                <h3 className="text-xl text-center font-medium text-white opacity-80">A showcase of projects I've developed and contributed to.</h3>
-              </div>
-  
-              <div className='grid grid-cols-3 gap-4 mb-8'>
-                  {projectData.map((project, index) => (
-                      <a href={project.link} key={index} target="_blank" rel="noopener noreferrer" className='relative w-96 h-60 rounded-2xl text-white overflow-hidden cursor-pointer transition-all duration-700 card'>
-                          <FrontOfCard logo={project.logo} />
-                          <BackOfCard title={project.title} description={project.description} />
-                      </a>
-                  ))}
-              </div>
-  
-              <div className='text-center py-4 mt-4 bg-[#595c9f] text-white rounded-full shadow-xl'>
-                  <h4 className='text-xl font-semibold'>More coming soon...</h4>
-              </div>
+      <div className='flex flex-col items-center mt-[-70px]'> 
+        <div className='mt-14 p-4 md:p-8 w-full md:w-auto'>
+          <div className="mb-6 bg-gradient-to-r from-[#595c9f] to-[#3a3e7e] p-4 rounded-lg shadow-md">
+            <h1 className="text-2xl md:text-3xl text-center font-extrabold text-white mb-3">My Projects</h1>
+            <h3 className="text-md md:text-xl text-center font-medium text-white opacity-80">A showcase of projects I've developed and contributed to.</h3>
           </div>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8'>
+            {projectData.map((project, index) => (
+              <a href={project.link} key={index} target="_blank" rel="noopener noreferrer" 
+                 className='relative w-full md:w-96 h-60 rounded-2xl text-white overflow-hidden cursor-pointer transition-all duration-700 card'>
+                <FrontOfCard logo={project.logo} />
+                <BackOfCard title={project.title} description={project.description} />
+              </a>
+            ))}
+          </div>
+          <div className='text-center py-4 mt-4 bg-[#595c9f] text-white rounded-full shadow-xl'>
+            <h4 className='text-md md:text-xl font-semibold'>More coming soon...</h4>
+          </div>
+        </div>
       </div>
     );
   }
   
-
   export default Projects;

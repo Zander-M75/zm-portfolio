@@ -77,12 +77,12 @@ const Skills = () => {
         return [];
     }
   };
-//   flex flex-col justify-between items-start w-full p-8 border border-gray-300 rounded-lg
+
   return (
-    <section className="p-8 bg-gray-100 rounded-lg h-[504px] w-[624px]">
+    <section className="p-4 md:p-8 bg-gray-100 rounded-lg h-auto md:h-[504px] w-full md:w-[624px]">
       <div>
-        <h1 className="text-4xl font-bold mb-4">Tech Stack:</h1>
-        <div className="flex mb-4 gap-2">
+        <h1 className="text-2xl md:text-4xl font-bold mb-4">Tech Stack:</h1>
+        <div className="flex flex-wrap mb-4 gap-2">
           <button
             className={`flex-1 p-2 rounded-lg transition duration-300 ease-in-out ${activeTab === 'frontend' ? 'bg-[#595c9f] text-white' : 'bg-gray-200 hover:bg-gray-300'}`}
             onClick={() => setActiveTab('frontend')}
@@ -108,7 +108,7 @@ const Skills = () => {
             DevOps/Other
           </button>
         </div>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {getTechToDisplay().map((tech, index) => (
             <div key={index} className="flex flex-col items-center text-center p-2 bg-white rounded-lg ring-1 ring-gray-300 hover:ring-blue-400 transition duration-300">
               <img src={tech.logo} alt={tech.name} className="mx-auto h-12 w-12 mb-1" />
