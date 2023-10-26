@@ -1,13 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';  // Import Link
 import burger3 from "../assets/photos/burger3.jpeg";
 import github3 from "../assets/photos/github3.png";
 import linkedin2 from "../assets/photos/linkedin2.png";
-import background from "../assets/photos/background.png";  // Import the background image
+import background from "../assets/photos/background.png";
 
 function HomePage() {
     return (
         <div className="flex flex-col justify-center items-center h-screen bg-cover bg-no-repeat bg-center relative" style={{ backgroundImage: `url('${background}')` }}>
-            {/* Card with Low Opacity */}
             <div className="flex flex-col items-center mb-20 bg-white bg-opacity-70 p-4 sm:p-6 md:p-8 rounded-lg shadow-2xl z-10">
                 <div className="rounded-full w-32 h-32 sm:w-40 sm:h-40 md:w-52 md:h-52 overflow-hidden shadow-lg mb-5">
                     <img src={burger3} alt="Zander" className="w-full h-full object-cover" />
@@ -25,15 +25,16 @@ function HomePage() {
                     </a>
                 </div>
 
-                <a href="/projects" className="bg-[#595c9f] text-white py-1 sm:py-1.5 md:py-2 px-3 sm:px-4 md:px-5 rounded-lg transition-transform transform hover:scale-110 hover:shadow-2xl">
+                <Link to="/projects" className="bg-[#595c9f] text-white py-1 sm:py-1.5 md:py-2 px-3 sm:px-4 md:px-5 rounded-lg transition-transform transform hover:scale-110 hover:shadow-2xl">
                     See Projects
-                </a>
+                </Link>
             </div>
         </div>
     );
 }
 
 export default HomePage;
+
 
 
 
