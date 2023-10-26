@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "private": true,
-  "homepage": "http://zander-m75.github.io/",
+  "homepage": "http://zander-m75.github.io/zm-portfolio/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
