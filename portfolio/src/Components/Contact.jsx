@@ -18,7 +18,7 @@ function Contact() {
                 Got A Challenge? Lets Tackle It Together!
             </h2>
             <p className="text-gray-700 mb-8 text-md md:text-xl text-center">
-                Drop me a line, and I'll get back to you swiftly.
+                Drop me a line, and I'll get back to you quickly.
             </p>
 
             <form
