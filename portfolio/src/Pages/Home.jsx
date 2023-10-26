@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from '../Components/Header';
 import About from '../Components/About';
 import EducationAndSkills from '../Components/EducationAndSkills';
@@ -9,7 +9,7 @@ import Contact from '../Components/Contact';
 
 function Home() {
   return (
-    <Router>
+    <Router basename="/">
         <Header />
         <Routes>
             <Route path="/" element={<HomePage />} />
@@ -23,7 +23,8 @@ function Home() {
             <Route path="/contact" element={<Contact />} />
         </Routes>
     </Router>
-);
+  );
 }
 
 export default Home;
+
