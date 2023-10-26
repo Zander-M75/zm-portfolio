@@ -15,7 +15,7 @@ const projectData = [
   },
   {
     logo: booty,
-    description: "BootyCamp, A team-built full-stack app where users get personalized workout plans based on fitness goals. I designed the landing, sign-in, and workout generator pages, using HTML, Javascript, CSS, Handlebars.js, Bootstrap and Materialize.",
+    description: "BootyCamp: A team-built full-stack app where users get personalized workout plans based on fitness goals. I designed the landing, sign-in, and workout generator pages, using HTML, Javascript, CSS, Handlebars.js, Bootstrap and Materialize.",
     link: "https://github.com/pmorris50/Workout-Creator",
     title: "BootyCamp Workout Generator"
   },
