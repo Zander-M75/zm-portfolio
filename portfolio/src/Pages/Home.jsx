@@ -6,6 +6,7 @@ import EducationAndSkills from '../Components/EducationAndSkills';
 import Projects from '../Components/Projects';
 import HomePage from '../Components/HomePage';
 import Contact from '../Components/Contact';
+import Footer from '../Components/Footer';
 
 function Home() {
   return (
@@ -22,6 +23,7 @@ function Home() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Footer />
     </Router>
   );
 }
